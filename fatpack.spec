@@ -1,5 +1,5 @@
 %define upstream_name    App-FatPacker
-%define upstream_version 0.009001
+%define upstream_version 0.009002
 
 Name:       fatpack
 Version:    %perl_convert_version %{upstream_version}
