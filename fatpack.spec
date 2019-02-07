@@ -25,10 +25,10 @@ Command line frontend for App::FatPacker
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes META.yml
