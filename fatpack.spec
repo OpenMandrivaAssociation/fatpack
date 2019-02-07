@@ -1,9 +1,9 @@
 %define upstream_name    App-FatPacker
-%define upstream_version 0.010000
+%define upstream_version 0.010007
 
 Name:       fatpack
 Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Release:    1
 
 Summary:    Pack your dependencies onto your script file
 License:    GPL+ or Artistic
@@ -26,9 +26,6 @@ Command line frontend for App::FatPacker
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
-
-%check
-%make test
 
 %install
 %makeinstall_std
