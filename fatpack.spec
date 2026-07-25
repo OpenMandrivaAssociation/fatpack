@@ -8,7 +8,7 @@ Release:    1
 Summary:    Pack your dependencies onto your script file
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://metacpan.org/dist/App-FatPacker
+Url:        https://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/App-FatPacker
 Source0:    https://cpan.metacpan.org/authors/id/M/MS/MSTROUT/App-FatPacker-%{upstream_version}.tar.gz
 
 BuildRequires:	make
