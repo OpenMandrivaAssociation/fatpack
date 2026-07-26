@@ -1,15 +1,13 @@
 %define upstream_name    App-FatPacker
-%define upstream_version 0.010008
-
 Name:       fatpack
-Version:    %{upstream_version}
-Release:    1
+Version:    0.010008
+Release:    2
 
 Summary:    Pack your dependencies onto your script file
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/App-FatPacker
-Source0:    https://cpan.metacpan.org/authors/id/M/MS/MSTROUT/App-FatPacker-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/M/MS/MSTROUT/App-FatPacker-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::MakeMaker)
@@ -22,7 +20,7 @@ Pack your dependencies onto your script file
 Command line frontend for App::FatPacker  
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
